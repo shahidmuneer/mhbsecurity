@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "dom7@^2.0.2",
+        "scope": null,
+        "escapedName": "dom7",
+        "name": "dom7",
+        "rawSpec": "^2.0.2",
+        "spec": ">=2.0.2 <3.0.0",
+        "type": "range"
+      },
+      "C:\\wamp64\\www\\mhbsecurity\\node_modules\\swiper"
+    ]
+  ],
+  "_from": "dom7@>=2.0.2 <3.0.0",
+  "_id": "dom7@2.0.2",
+  "_inCache": true,
+  "_location": "/dom7",
+  "_nodeVersion": "9.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/dom7_2.0.2_1518270586504_0.8967144074599342"
+  },
+  "_npmUser": {
+    "name": "nolimits4web",
+    "email": "nolimits4web@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "dom7@^2.0.2",
+    "scope": null,
+    "escapedName": "dom7",
+    "name": "dom7",
+    "rawSpec": "^2.0.2",
+    "spec": ">=2.0.2 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/swiper"
+  ],
+  "_resolved": "https://registry.npmjs.org/dom7/-/dom7-2.0.2.tgz",
+  "_shasum": "b0259ddab4c06228ddb2e6007f9ef6f0448bcf9d",
+  "_shrinkwrap": null,
+  "_spec": "dom7@^2.0.2",
+  "_where": "C:\\wamp64\\www\\mhbsecurity\\node_modules\\swiper",
+  "author": {
+    "name": "Vladimir Kharlampidi"
+  },
+  "bugs": {
+    "url": "https://github.com/nolimits4web/Dom7/issues"
+  },
+  "dependencies": {
+    "ssr-window": "^1.0.0"
+  },
+  "description": "Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-header": "^2.0.1",
+    "gulp-modify-file": "^1.0.1",
+    "gulp-open": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "rollup-plugin-buble": "^0.19.1",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-stream": "^1.24.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-SL5wdVwVguNehkLOpq8Sj3o0C2A5LMBd6Mc7XdnA02n90hLvXXu0vdDirGhdRoP581NgANi1Swe4Omq7SD4lTA==",
+    "shasum": "b0259ddab4c06228ddb2e6007f9ef6f0448bcf9d",
+    "tarball": "https://registry.npmjs.org/dom7/-/dom7-2.0.2.tgz",
+    "fileCount": 21,
+    "unpackedSize": 276434
+  },
+  "gitHead": "65c526d77858cab564b734beca90cdb0c41aa991",
+  "homepage": "http://framework7.io/docs/dom.html",
+  "jsnext:main": "dist/dom7.module.js",
+  "keywords": [
+    "dom",
+    "dom7",
+    "jquery",
+    "mobile",
+    "framework7"
+  ],
+  "license": "MIT",
+  "main": "dist/dom7.js",
+  "maintainers": [
+    {
+      "name": "nolimits4web",
+      "email": "nolimits4web@gmail.com"
+    }
+  ],
+  "module": "dist/dom7.module.js",
+  "name": "dom7",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolimits4web/Dom7.git"
+  },
+  "scripts": {
+    "build-dev": "NODE_ENV=development gulp build",
+    "build-prod": "NODE_ENV=production gulp build",
+    "dev": "NODE_ENV=development gulp build && NODE_ENV=development gulp demo && gulp server",
+    "prod": "NODE_ENV=production gulp demo && NODE_ENV=production gulp server",
+    "test": "npm run build-dev"
+  },
+  "version": "2.0.2"
+}

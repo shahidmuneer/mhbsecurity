@@ -1,0 +1,11 @@
+git init //initialize the git repo
+git add . // will add all files into the git
+git commit -m "this is my message which will be 
+displaed" master 
+// this will commit the changes and changges 
+//will be saved
+
+git remote add orign https://github.com/shahidmuneer/mhbsecurity
+// this will add the remote repo to the list undre variable orign
+git pull orign master //this will synchronize the changes to the
+//github repository  

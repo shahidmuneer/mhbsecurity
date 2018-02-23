@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/welcome.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/ContentManagementController.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/create.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/MenuManagementController.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/css/responsive.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/layouts/app-template.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/public/css/responsive.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/routes/web.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Contents.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/ProductManagementController.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/config/database.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/menu-management/index.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/style.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/database/migrations/2018_02_22_090435_create_menu_table.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/index.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/public/style.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/layouts/sidebar.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/edit.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/config/app.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/product-mgt/edit.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/database/migrations/2018_02_21_035441_create_content_table.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/.env</file>
+        </group>
+    </open-files>
+</project-private>
