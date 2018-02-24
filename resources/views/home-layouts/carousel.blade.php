@@ -43,7 +43,7 @@
                     <!--Form without header-->
                     <div class="card  wow fadeInUp">
                         <div class="text-center" style="background-color: #0057D2!important">
-                            <h5 class=" mb-5 " style="color:white; margin-top:25px; "><strong>FREE HOME Security
+                            <h5  style="color:white; padding:10px; margin-top:25px; "><strong>FREE HOME Security
                                     Review</strong></h5>
                         </div>
                         <div class="card-body col-md-12">
