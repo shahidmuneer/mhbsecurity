@@ -823,7 +823,6 @@
 <section class="footer-contact-area section_padding_100 clearfix" id="contact">
     <div class="container">
         <div class="row">
-            {{--customContent--}}
 
             <cnter>
             <span style="font-weight: 400">
@@ -860,12 +859,11 @@
                 <p><font color="#333333">
   <span style="font-family: Verdana,Helvetica; font-size: 8pt">Head Office : One
   Yonge Street, Suite 1801, Toronto, Ontario, M5E 1W7</span></font><p>
-            {{--endCustomContent--}}
+            
             </cnter>
         </div>
     </div>
 
-    {{--OurParnersSlider--}}
     <section class="app-screenshots-area section_padding_0_100 clearfix" id="screenshot">
         <div class="container">
             <div class="row">
@@ -906,7 +904,6 @@
             </div>
         </div>
     </section>
-    {{--endOurPartnerSlider--}}
 
 
 </section>
