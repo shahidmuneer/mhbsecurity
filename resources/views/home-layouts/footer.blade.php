@@ -26,5 +26,5 @@
         <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
         <p>Copyright ©2018 MHB Security Systems <a href="http://shahidmuneer.com" target="_blank">Shahid</a></p>
     </div>
-    
+
 </footer>

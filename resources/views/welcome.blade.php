@@ -823,67 +823,92 @@
 <section class="footer-contact-area section_padding_100 clearfix" id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            {{--customContent--}}
+
+            <cnter>
+            <span style="font-weight: 400">
+                <div class="col-md-6">
                 <!-- Heading Text  -->
                 <div class="section-heading">
-                    <h2>Get in touch with us!</h2>
+                    <h2>About Us</h2>
                     <div class="line-shape"></div>
                 </div>
-                <div class="footer-text">
-                    <p>Certain content is the property of ADT and used under license. The ADT and ADT Authorized Dealer
-                        logos are registered trademarks of ADT Services AG and are used under license. Videos are used
-                        with permission.</p>
                 </div>
-                <div class="address-text">
-                    <p><span>Address:</span> One Yonge Street, Suite 1801, Toronto, Ontario, M5E 1W7</p>
-                </div>
-                <div class="phone-text">
-                    <p><span>Phone:</span> +1-888-808-9642 </p>
-                </div>
-                <div class="email-text">
-                    <p><span>Email:</span> support@mhbsecurity.com</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <!-- Form Start-->
-                <div class="contact_from">
-                    <form action="#" method="post">
-                        <!-- Message Input Area Start -->
-                        <div class="contact_input_area">
-                            <div class="row">
-                                <!-- Single Input Area Start -->
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="name" id="name"
-                                               placeholder="Your Name" required>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email"
-                                               placeholder="Your E-mail" required>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                                                  placeholder="   Your Message *" required></textarea>
-                                    </div>
-                                </div>
-                                <!-- Single Input Area Start -->
-                                <div class="col-12">
-                                    <button type="submit" class="btn submit-btn">Send Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Message Input Area End -->
-                    </form>
+                    <div class="col-md-6"></div>
+
+
+
+</span> </h2>
+            <p><font color="#333333"><a href="adt-promotions-home-security-system-wireless-hardwired-home-alarm-system.html">ADT Promotions</a> <a href="/"> Monitored Home
+                        Security</a> <a href="adt-best-deal-home-security-system-wireless-hardwired-home-alarm-system.html">Best Deal</a> Alarm Systems : Canada's #1 Choice for <a href="adt-promotion-home-security-system-wireless-hardwired-home-alarm-system.html">ADT Promotion Home Security</a> | Call Now:
+                    1-888-808-9642 <br>
+                    Certain content is the property of <a href="home-security-system.html">ADT</a> and used under license. The
+                </font>
+                <a target="_blank" href="http://www.adt.ca" style="text-decoration: none; font-family: tahoma; font-size: 11px; color: #2D546D">
+                    <font color="#333333" style="font-size: 8pt; font-family: Verdana,Helvetica">
+                        ADT</font></a><font color="#333333"> and <a href="adt-dealers-home-security-system-wireless-hardwired-home-alarm-system.html">ADT
+                        Authorized Dealer</a> logos are registered trademarks of <a href="adt-promotional-home-security-system-wireless-hardwired-home-alarm-system.html">ADT Promotional Services</a> AG and are
+                    used under license. </font>
+                <a target="_blank" href="http://www.security.honeywell.com/" style="text-decoration: none; font-family: tahoma; font-size: 11px; color: #2D546D">
+                    <font color="#333333" style="font-size: 8pt; font-family: Verdana,Helvetica">
+                        Videos are used with permission.</font></a>
+
+
+
+
+
+                <p><font color="#333333">
+  <span style="font-family: Verdana,Helvetica; font-size: 8pt">Head Office : One
+  Yonge Street, Suite 1801, Toronto, Ontario, M5E 1W7</span></font><p>
+            {{--endCustomContent--}}
+            </cnter>
+        </div>
+    </div>
+
+    {{--OurParnersSlider--}}
+    <section class="app-screenshots-area section_padding_0_100 clearfix" id="screenshot">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Our Partners</h2>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- App Screenshots Slides  -->
+                    <div class="app_screenshots_slides owl-carousel">
+                        <div class="single-shot">
+                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{--endOurPartnerSlider--}}
+
+
 </section>
 
 @endsection
