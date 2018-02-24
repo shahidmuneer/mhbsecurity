@@ -80,7 +80,7 @@
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="#screenshot">Products</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">About Us</a></li>
                             </ul>
                             <div class="sing-up-button">
 
