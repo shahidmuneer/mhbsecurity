@@ -30,7 +30,7 @@
 </div>
 <!-- ***** Header Area Start ***** -->
 
-<header class=" animated bg-blue">
+<header class="header_area animated bg-blue">
     <div class="container">
         <div class="row align-items-center">
             <!-- Menu Area Start -->
@@ -39,7 +39,7 @@
                     <nav class="navbar navbar-expand-lg navbar-default navbar-light">
                         <!-- Logo -->
                         <a class="navbar-brand color-dust" href="#home" style="padding:5px;"><img
-                                    src="/img/adt-images/adt-logo.png" width="80" class="img-responsive"></a>
+                                    src="/img/adt-images/adt-logo.png" width="60" class="img-responsive"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
                                 aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
                                     class="navbar-toggler-icon"></span></button>

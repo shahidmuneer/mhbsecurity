@@ -51,7 +51,7 @@
 
   @include('home-layouts.header')
   
-  @include('home-layouts.carousel')
+   @yield('carousel')
     <!-- Sidebar -->
     @yield('content')
     <!-- /.content-wrapper -->

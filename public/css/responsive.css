@@ -265,6 +265,11 @@
    
 }
 @media (max-width: 1000px){
+    
+    .navbar-expand-sm{
+        position:static;
+    }
+    
     .main-text
 {
     position:inherit;

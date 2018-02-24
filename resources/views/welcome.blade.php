@@ -1,4 +1,10 @@
 @extends("home-layouts.app")
+@section('carousel')
+
+@include('home-layouts.carousel')
+
+@endsection
+
 @section("content")
 <!-- ***** Header Area End ***** -->
 <div class="container bg-white">
