@@ -35,9 +35,10 @@
         <li><a href="{{ url('product-management') }}"><i class="fa fa-car"></i> <span>Products</span></a></li>
    <li><a href="{{ route('content-management.index') }}"><i class="fa fa-plane"></i> <span>Posts</span></a></li>
    <li><a href="{{ route('menu-management.index') }}"><i class="fa fa-bars"></i> <span>menu</span></a></li>
-   
-         
-        </ul>
+   <li><a href="{{ route('advantage-management.index') }}"><i class="fa fa-bars"></i> <span>Advantage</span></a></li>
+   <li><a href="{{ route('package-management.index') }}"><i class="fa fa-bars"></i> <span>Package</span></a></li>
+      
+      </ul>
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

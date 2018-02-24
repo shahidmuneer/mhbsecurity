@@ -1,13 +1,14 @@
-@extends('product-mgt.base')
+@extends('package-mgt.base')
 
 @section('action-content')
+
 <div class="container">
     <div class="row">
         <div class="col-md-10 ">
             <div class="panel panel-default">
-                <div class="panel-heading">Add new Product</div>
+                <div class="panel-heading">Add new Advantage</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" enctype="multipart/form-data" role="form" method="POST" action="{{ route('product-management.store') }}">
+                    <form class="form-horizontal" enctype="multipart/form-data" role="form" method="POST" action="{{ route('package-management.store') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -25,7 +26,51 @@
                         </div>
 
                    
+                        <div class="form-group{{ $errors->has('package_id') ? ' has-error' : '' }}">
+                            <label for="userpackage_id" class="col-md-4 control-label">package Id</label>
+
+                            <div class="col-md-6">
+                                <input id="package_id" type="text" class="form-control" name="package_id" value="{{ old('package_id') }}" required autofocus>
+
+                                @if ($errors->has('package_id'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('package_id') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        
+                              <div class="form-group{{ $errors->has('comes_with') ? ' has-error' : '' }}">
+                            <label for="usercomes_with" class="col-md-4 control-label">Additional</label>
+
+                            <div class="col-md-6">
+                                <input id="comes_with" type="text" class="form-control" name="comes_with" value="{{ old('comes_with') }}" required autofocus>
+
+                                @if ($errors->has('comes_with'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('comes_with') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        
                       
+                          <div class="form-group{{ $errors->has('importance') ? ' has-error' : '' }}">
+                            <label for="userimportance" class="col-md-4 control-label">Importance</label>
+
+                            <div class="col-md-6">
+                                <input id="importance" type="text" class="form-control" name="importance" value="{{ old('importance') }}" required autofocus>
+
+                                @if ($errors->has('importance'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('importance') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        
                         <div class="form-group{{ $errors->has('picture') ? ' has-error' : '' }}">
                             <label for="picture" class="col-md-4 control-label">Image</label>
 

@@ -5,10 +5,7 @@
             {{--<div class="col-12 col-lg-10">--}}
 
                 {{--<div class="col-lg-7 col-sm-12 pull-left">--}}
-                    {{--<p> Call now for a free quote :<a href="tel:+18888089642"> <span class="fa fa-phone"--}}
-                                                                                     {{--style="color:red"></span> <span--}}
-                                    {{--style="color:red">+1888-808-9642</span> </a>--}}
-                    {{--</p>--}}
+                   
                 {{--</div>--}}
 
                 {{--<div class="col-lg-4 text-right col-sm-12 pull-right">--}}
@@ -30,15 +27,16 @@
 </div>
 <!-- ***** Header Area Start ***** -->
 
-<header class="header_area animated bg-blue">
+<header class="animated bg-blue">
     <div class="container">
         <div class="row align-items-center">
             <!-- Menu Area Start -->
-            <div class="col-12 col-lg-10">
+                
+            <div class="col-12 col-lg-12">
                 <div class="menu_area ">
                     <nav class="navbar navbar-expand-lg navbar-default navbar-light">
                         <!-- Logo -->
-                        <a class="navbar-brand color-dust" href="#home" style="padding:5px;"><img
+                        <a class="navbar-brand color-dust" href="#home" style="padding:5px; margin-left:-65px;"><img
                                     src="/img/adt-images/adt-logo.png" width="60" class="img-responsive"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
                                 aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -82,13 +80,25 @@
                                 <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                             </ul>
+                            <div >
+                                <a href="tel:+18888089642" style="padding:10px;"> 
+                      <span class="fa fa-phone" style="color:#c7c734;">+1888-808-9642</span> </a>
+                        </div>
                             <div class="sing-up-button">
-
+                    
+           
+                  
+        
+           <a  href="/login">Login</a>
+        
                             </div>
+                            
                         </div>
                     </nav>
                 </div>
+           
             </div>
+         
         </div>
         <!-- Signup btn -->
 

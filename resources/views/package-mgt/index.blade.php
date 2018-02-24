@@ -1,4 +1,4 @@
-@extends('product-mgt.base')
+@extends('package-mgt.base')
 @section('action-content')
     <!-- Main content -->
     <section class="content">
@@ -6,10 +6,10 @@
   <div class="box-header">
     <div class="row">
         <div class="col-sm-8">
-          <h3 class="box-title">List of Products</h3>
+          <h3 class="box-title">List of Packages</h3>
         </div>
         <div class="col-sm-4">
-          <a class="btn btn-primary" href="{{ route('product-management.create') }}">Add new Product</a>
+          <a class="btn btn-primary" href="{{ route('package-management.create') }}">Add new Package</a>
         </div>
     </div>
   </div>
@@ -19,7 +19,7 @@
         <div class="col-sm-6"></div>
         <div class="col-sm-6"></div>
       </div>
-      <form method="POST" action="{{ route('product-management.search') }}">
+      <form method="POST" action="{{ route('package-management.search') }}">
          {{ csrf_field() }}
          @component('layouts.search', ['title' => 'Search'])
           @component('layouts.two-cols-search-row', ['items' => ['User Name', 'First Name'], 
@@ -40,15 +40,15 @@
               </tr>
             </thead>
             <tbody>
-            @foreach ($products as $product)
+            @foreach ($packages as $package)
                 <tr role="row" class="odd">
-                    <td class="sorting_1"><img src="/uploads/products/{{ $product->picture }}" width="50"></td>
-                  <td>{{ $product->name }}</td>
+                    <td class="sorting_1"><img src="/uploads/packages/{{ $package->picture }}" width="50"></td>
+                  <td>{{ $package->name }}</td>
                   <td>
-            <center> <form class="row"  method="POST" action="{{ route('product-management.destroy', ['id' => $product->id]) }}" onsubmit = "return confirm('Are you sure?')">
+            <center> <form class="row"  method="POST" action="{{ route('package-management.destroy', ['id' => $package->id]) }}" onsubmit = "return confirm('Are you sure?')">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <a href="{{ route('product-management.edit', ['id' => $product->id]) }}" class="btn btn-warning btn-sm  btn-margin">
+                        <a href="{{ route('package-management.edit', ['id' => $package->id]) }}" class="btn btn-warning btn-sm  btn-margin">
                             <i class="fa fa-edit"></i>
                         </a>
                        
@@ -74,11 +74,11 @@
       </div>
       <div class="row">
         <div class="col-sm-5">
-          <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to {{count($products)}} of {{count($products)}} entries</div>
+          <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to {{count($packages)}} of {{count($packages)}} entries</div>
         </div>
         <div class="col-sm-7">
           <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
-            {{ $products->links() }}
+            {{ $packages->links() }}
           </div>
         </div>
       </div>

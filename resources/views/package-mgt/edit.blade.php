@@ -1,13 +1,13 @@
-@extends('product-mgt.base')
+@extends('package-mgt.base')
 
 @section('action-content')
 <div class="container">
     <div class="row">
         <div class="col-md-10 ">
             <div class="panel panel-default">
-                <div class="panel-heading">Add new Product</div>
+                <div class="panel-heading">Add new Advantage</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" enctype="multipart/form-data" role="form" method="POST" action="{{ route('product-management.update',['id'=>$product->id]) }}">
+                    <form class="form-horizontal" enctype="multipart/form-data" role="form" method="POST" action="{{ route('package-management.update',['id'=>$package->id]) }}">
                      
                         <input type="hidden" name="_method" value="PATCH">
                         
@@ -17,7 +17,7 @@
                             <label for="username" class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ $product->name }}" required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ $package->name }}" required autofocus>
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -28,12 +28,57 @@
                         </div>
 
                    
+                        <div class="form-group{{ $errors->has('package_id') ? ' has-error' : '' }}">
+                            <label for="userpackage_id" class="col-md-4 control-label">package Id</label>
+
+                            <div class="col-md-6">
+                                <input id="package_id" type="text" class="form-control" name="package_id" value="{{ $package->package_id }}" required autofocus>
+
+                                @if ($errors->has('package_id'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('package_id') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        
+                              <div class="form-group{{ $errors->has('comes_with') ? ' has-error' : '' }}">
+                            <label for="usercomes_with" class="col-md-4 control-label">Additional</label>
+
+                            <div class="col-md-6">
+                                <input id="comes_with" type="text" class="form-control" name="comes_with" value="{{ $package->comes_with }}" required autofocus>
+
+                                @if ($errors->has('comes_with'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('comes_with') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        
+                      
+                          <div class="form-group{{ $errors->has('importance') ? ' has-error' : '' }}">
+                            <label for="userimportance" class="col-md-4 control-label">Importance</label>
+
+                            <div class="col-md-6">
+                                <input id="importance" type="text" class="form-control" name="importance" value="{{ $package->importance }}" required autofocus>
+
+                                @if ($errors->has('importance'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('importance') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                   
                       
                         <div class="form-group{{ $errors->has('picture') ? ' has-error' : '' }}">
                             <label for="picture" class="col-md-4 control-label">Image</label>
 
                             <div class="col-md-6">
-                                <input id="picture" type="file" class="form-control" name="picture" value="{{ $product->picture }}" >
+                                <input id="picture" type="file" class="form-control" name="picture" value="{{ $package->picture }}" >
 
                                 @if ($errors->has('picture'))
                                     <span class="help-block">
@@ -47,7 +92,7 @@
                             <label for="picture_description" class="col-md-4 control-label">Image Description</label>
 
                             <div class="col-md-6">
-                                <input id="picture_description" type="picture_description" class="form-control" name="picture_description" value="{{ $product->picture_description }}" required>
+                                <input id="picture_description" type="picture_description" class="form-control" name="picture_description" value="{{ $package->picture_description }}" required>
 
                                 @if ($errors->has('picture_description'))
                                     <span class="help-block">
@@ -62,7 +107,7 @@
                            </div><hr>
                             <div class="clearfix"></div>
                             <div class="col-md-12" style='margin-top:10px;'>
-                                <textarea id="details" type="details" class="form-control" name="details">{{$product->details}}</textarea>
+                                <textarea id="details" type="details" class="form-control" name="details">{{$package->details}}</textarea>
                                 @if ($errors->has('details'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('details') }}</strong>

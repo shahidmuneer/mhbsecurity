@@ -4,11 +4,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Product Mangement
+        package Mangement
       </h1>
       <ol class="breadcrumb">
         <!-- li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li-->
-        <li class="active">Product Mangement</li>
+        <li class="active">package Mangement</li>
       </ol>
     </section>
     @yield('action-content')

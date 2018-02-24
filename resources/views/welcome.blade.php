@@ -169,22 +169,20 @@
             </div>
         @endfor
 
-        @for($i=0;$i<3;$i++)
+        @foreach($packages as $package)
             <div class="col-lg-4 col-sm-8 offset-lg-0  offset-sm-2 box wow fadeInUp">
                 <div class="col-lg-12 box-head " >
-                    Feature
+                {{$package->name}}
                 </div>
                 <div class="col-lg-12 box-body">
-                    <div class="col-lg-12 box-content text-center">
-                        <img width="200" height="150" src="/img/core-img/landing-first.png">
+                    <div class=" box-content text-center">
+                        <img width="200" height="150" alt="{{$package->picture_description}}" src="/uploads/packages/{{$package->picture}}">
                         <div class="clearfix"></div>
-                        <center>
-                            <p>
-                                The benefits are numerous, almost endless, but let’s look at some of the things our
-                                customers are enjoying most about ADT Pulse. The first is the ability to check the
-                                status of your
-                            </p>
-                        </center>
+                                <h6><label><b>PACKAGE ID:</b></label> {{$package->package_id}}</h6>
+                        <h5>{{$package->comes_with}}</h5>
+                        <h4 style="color:red;">{{$package->importance}}</h4>
+                           
+                       
 
                     </div>
                 </div>
@@ -192,7 +190,7 @@
                     <a style="box-shadow:1px -45px 28px 2px midnightblue;" href="#" class="btn btn-primary">Read  More</a></center>
             </div>
 
-        @endfor
+        @endforeach
     </div>
 </div>
 
@@ -201,23 +199,27 @@
 
 
 <div class="section_padding_50_20 well-lg well bg-white" id="about" style=" padding-top:50px; padding-bottom: 50px; ">
+  <div class="row">
+        <div class="col-12">
+            <!-- Heading Text -->
+            <div class="section-heading text-center">
+                <h2>Products</h2>
+                <div class="line-shape"></div>
+            </div>
+        </div>
+    </div>
+    
     <div class="container  wow fadeInUp" style="">
         <div class="products-carousal">
             @foreach($products as $product)
                 <div id="product" data-toggle="modal" product="{{$product->id}}" data-target="#myModal">
                     <div class="card hoverable">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <img class="img-thumbnail" style="width:100%;"
+                       
+                                <div class="row">
+                                    <img class="image-responsive" style="width:100%;"
                                          src="/uploads/products/{{$product->picture}}"
                                          alt='{{$product->picture_description}}'>
                                 </div>
-
-                            </div>
-
-                        </div>
-
 
                     </div>
                     <h5 class="text-center"> {{$product->name}}</h5>

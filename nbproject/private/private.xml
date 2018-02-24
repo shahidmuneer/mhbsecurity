@@ -5,26 +5,40 @@
         <group>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/welcome.blade.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/ContentManagementController.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/create.blade.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/MenuManagementController.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/css/responsive.css</file>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/layouts/app-template.blade.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/public/css/responsive.css</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/routes/web.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/app/Contents.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/ProductManagementController.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/config/database.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/menu-management/index.blade.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/style.css</file>
             <file>file:/C:/wamp64/www/mhbsecurity/database/migrations/2018_02_22_090435_create_menu_table.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/advantages-mgt/edit.blade.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/index.blade.php</file>
-            <file>file:/C:/wamp64/www/mhbsecurity/public/style.css</file>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/layouts/sidebar.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/home-layouts/home.blade.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/edit.blade.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/config/app.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/resources/views/product-mgt/edit.blade.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/database/migrations/2018_02_21_035441_create_content_table.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/content-management/create.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/MenuManagementController.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/css/responsive.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/public/css/responsive.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/layouts/app.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/routes/web.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Contents.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/ProductManagementController.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/style.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/advantages-mgt/base.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/home-layouts/footer.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/public/style.css</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/home-layouts/app.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/template.blade.html</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/advantages-mgt/index.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/test.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/advantages-mgt/create.blade.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Http/Controllers/AdvantageManagementController.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/app/Advantages.php</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/home-layouts/header.blade.php</file>
             <file>file:/C:/wamp64/www/mhbsecurity/.env</file>
+            <file>file:/C:/wamp64/www/mhbsecurity/resources/views/home-layouts/carousel.blade.php</file>
         </group>
     </open-files>
 </project-private>

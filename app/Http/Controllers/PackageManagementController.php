@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Products;
+use App\Packages;
 
-class ProductManagementController extends Controller
+class PackageManagementController extends Controller
 {
        /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = '/product-management';
+    protected $redirectTo = '/package-management';
 
          /**
      * Create a new controller instance.
@@ -32,9 +32,9 @@ class ProductManagementController extends Controller
      */
     public function index()
     {
-        $products = Products::paginate(5);
+        $packages = Packages::paginate(5);
 
-        return view('product-mgt/index', ['products' => $products]);
+        return view('package-mgt/index', ['packages' => $packages]);
     }
 
     /**
@@ -44,7 +44,7 @@ class ProductManagementController extends Controller
      */
     public function create()
     {
-        return view('product-mgt.create');
+        return view('package-mgt.create');
     }
 
     /**
@@ -63,14 +63,12 @@ $insert_array=$request->all();
     
 if(!empty($image)){
     $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-    $image->move(base_path() . '/uploads/products/', $input['imagename']);
+    $image->move(base_path() . '/uploads/packages/', $input['imagename']);
     $insert_array=array_merge($insert_array,['picture'=>$input['imagename']]);
      
 }
-    
-    Products::create($insert_array);
-
-        return redirect()->intended('/product-management');
+    Packages::create($insert_array);
+        return redirect()->intended('/package-management');
     }
 
     /**
@@ -92,15 +90,15 @@ if(!empty($image)){
      */
     public function edit($id)
     {
-        $product = Products::find($id);
+        $package = Packages::find($id);
         
         // Redirect to user list if updating user wasn't existed
-        if ($product == null || $product->count() == 0) {
+        if ($package == null || $package->count() == 0) {
             return redirect()->intended('/user-management');
         }
         
    
-        return view('product-mgt/edit', ['product' => $product]);
+        return view('package-mgt/edit', ['package' => $package]);
     }
 
     /**
@@ -113,19 +111,19 @@ if(!empty($image)){
     public function update(Request $request, $id)
     {
        
-        $user = \App\Products::findOrFail($id);
+        $user = \App\Packages::findOrFail($id);
         
         $this->validateInput($request);
         $input=$request->all();
          $image = $request->file('picture');
 if(!empty($image)){
     $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-     $image->move(base_path() . '/uploads/products/', $input['imagename']);
+     $image->move(base_path() . '/uploads/packages/', $input['imagename']);
 $request=array_merge($input,['picture'=>$input['imagename']]);
 }
-        $product=\App\Products::find($id);
-        $product->fill($input)->save();
-        return redirect()->intended('/product-management');
+        $package=\App\Packages::find($id);
+        $package->fill($input)->save();
+        return redirect()->intended('/package-management');
     }
 
     /**
@@ -136,9 +134,9 @@ $request=array_merge($input,['picture'=>$input['imagename']]);
      */
     public function destroy($id)
     {
-        Products::where('id', $id)->delete();
+        Packages::where('id', $id)->delete();
         
-         return redirect()->intended('/product-management');
+         return redirect()->intended('/package-management');
     }
 
     /**
@@ -155,12 +153,12 @@ $request=array_merge($input,['picture'=>$input['imagename']]);
             'department' => $request['department']
             ];
 
-       $products = $this->doSearchingQuery($constraints);
-       return view('users-mgmt/index', ['users' => $products, 'searchingVals' => $constraints]);
+       $packages = $this->doSearchingQuery($constraints);
+       return view('users-mgmt/index', ['users' => $packages, 'searchingVals' => $constraints]);
     }
 
     private function doSearchingQuery($constraints) {
-        $query = Products::query();
+        $query = Packages::query();
         $fields = array_keys($constraints);
         $index = 0;
         foreach ($constraints as $constraint) {

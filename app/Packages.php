@@ -4,13 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Products extends Model
+class Packages extends Model
 {
     
-    
+    protected $table="package";
     protected $fillable=[
-        "code",
+        
         "name",
+        "package_id",
+        "comes_with",
+        "importance",
         "picture",
         "picture_description",
         "details"

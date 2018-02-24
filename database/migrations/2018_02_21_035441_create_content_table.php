@@ -16,12 +16,12 @@ class CreateContentTable extends Migration
         Schema::create('content', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('menu_id')->unsigned();
-            $table->string('heading',64);
-            $table->string('picture',64)->nullable();
-            $table->string('picture_description',64);
-            $table->text('copyrights');
-            $table->string('metaTitle',155);
-            $table->text('metaDescription');
+            $table->string('heading',64)->unique();
+            $table->string('picture',64)->nullable()->nullable();
+            $table->string('picture_description',64)->nullable();
+            $table->text('copyrights')->nullable();
+            $table->string('metaTitle',155)->nullable();
+            $table->text('metaDescription')->nullable();
             $table->text('content');
             $table->string('keywords',64);
             $table->timestamps();

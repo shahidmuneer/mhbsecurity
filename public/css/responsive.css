@@ -266,10 +266,10 @@
 }
 @media (max-width: 1000px){
     
-    .navbar-expand-sm{
-        position:static;
+    .navbar-brand img
+    {
+     margin-left:0px;   
     }
-    
     .main-text
 {
     position:inherit;

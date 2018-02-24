@@ -265,6 +265,11 @@
    
 }
 @media (max-width: 1000px){
+    
+    .navbar-brand img
+    {
+     margin-left:0px;   
+    }
     .main-text
 {
     position:inherit;

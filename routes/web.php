@@ -12,10 +12,11 @@
 */
 
 Route::get('/', function () {
-    $products=new \App\Products();
-    $products=$products->select(["name","id","picture","picture_description"])->get();
-
-    return view('welcome')->with(["products"=>$products]);
+    
+    $products=\App\Products::select(["name","id","picture","picture_description"])->get();
+    $packages= \App\Packages::select(["name","package_id","comes_with","importance","picture","picture_description"])->get();
+//  
+    return view('welcome')->with(["products"=>$products,"packages"=>$packages]);
 });
 Auth::routes();
 Route::get('/profile', 'ProfileController@index')->name('home');
@@ -32,6 +33,14 @@ Route::resource('content-management', 'ContentManagementController');
 
 Route::post('menu-management/search', 'MenuManagementController@search')->name('menu-management.search');
 Route::resource('menu-management','MenuManagementController');
+
+
+
+Route::post('advantage-management/search', 'AdvantageManagementController@search')->name('advantage-management.search');
+Route::resource('advantage-management','AdvantageManagementController');
+
+Route::post('package-management/search', 'PackageManagementController@search')->name('package-management.search');
+Route::resource('package-management','PackageManagementController');
 
 
 Route::get('/product/get', 'AjaxController@get');

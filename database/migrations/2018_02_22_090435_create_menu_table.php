@@ -35,6 +35,6 @@ class CreateMenuTable extends Migration
      $table->dropForeign(['menu_id']); 
     });  
         
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('menus');
     }
 }
