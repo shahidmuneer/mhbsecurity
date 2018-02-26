@@ -172,7 +172,7 @@ $request=array_merge($input,['picture'=>$input['imagename']]);
     }
     private function validateInput($request) {
         $this->validate($request, [
-        'name' => 'required|max:30',
+        'name' => 'required',
         'picture' => 'image',
         'picture_description' => 'required|max:155',
         'details' => 'required',

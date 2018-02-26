@@ -6,6 +6,7 @@
 @endsection
 
 @section("content")
+
 <!-- ***** Header Area End ***** -->
 <div class="container bg-white">
         <div class="row">
@@ -135,7 +136,7 @@
         <div class="col-12">
             <!-- Heading Text -->
             <div class="section-heading text-center">
-                <h2>Advantages</h2>
+                <h2>Packages</h2>
                 <div class="line-shape"></div>
             </div>
         </div>
@@ -159,7 +160,7 @@
                                 </div>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional
                                     content.</p>
-                                <a class="btn btn-primary">See More</a>
+                                <a class="btn btn-primary" href='/adt-canada-home-alarm-security-packages'>See More</a>
                             </div>
                         </div>
                     </div>
@@ -170,24 +171,24 @@
         @endfor
 
         @foreach($packages as $package)
-            <div class="col-lg-4 col-sm-8 offset-lg-0  offset-sm-2 box wow fadeInUp">
+            <div class="col-lg-4 col-sm-5 offset-lg-0  offset-sm-2 box wow fadeInUp">
                 <div class="col-lg-12 box-head " >
                 {{$package->name}}
                 </div>
-                <div class="col-lg-12 box-body">
+                <div class="col-lg-12 col-sm-12 box-body">
                     <div class=" box-content text-center">
                         <img width="200" height="150" alt="{{$package->picture_description}}" src="/uploads/packages/{{$package->picture}}">
                         <div class="clearfix"></div>
                                 <h6><label><b>PACKAGE ID:</b></label> {{$package->package_id}}</h6>
                         <h5>{{$package->comes_with}}</h5>
-                        <h4 style="color:red;">{{$package->importance}}</h4>
+                        <p style="color:red;">{{$package->importance}}</p>
                            
                        
 
                     </div>
                 </div>
                 <center>
-                    <a style="box-shadow:1px -45px 28px 2px midnightblue;" href="#" class="btn btn-primary">Read  More</a></center>
+                    <a style="box-shadow:1px -45px 28px 2px midnightblue;" href="/adt-canada-home-alarm-security-packages" class="btn btn-primary">Read  More</a></center>
             </div>
 
         @endforeach
@@ -212,11 +213,11 @@
     <div class="container  wow fadeInUp" style="">
         <div class="products-carousal">
             @foreach($products as $product)
-                <div id="product" data-toggle="modal" product="{{$product->id}}" data-target="#myModal">
-                    <div class="card hoverable">
+                <div id="product" data-toggle="modal"  product="{{$product->id}}" data-target="#myModal">
+                    <div class="card hoverable" style="height:100%;">
                        
-                                <div class="row">
-                                    <img class="image-responsive" style="width:100%;"
+                        <div class="row" style="height:100%;">
+                                    <img class="image-responsive" style="width:100%;height:100%;"
                                          src="/uploads/products/{{$product->picture}}"
                                          alt='{{$product->picture_description}}'>
                                 </div>
@@ -820,93 +821,6 @@
 <!-- ***** Our Team Area End ***** -->
 
 <!-- ***** Contact Us Area Start ***** -->
-<section class="footer-contact-area section_padding_100 clearfix" id="contact">
-    <div class="container">
-        <div class="row">
-
-            <cnter>
-            <span style="font-weight: 400">
-                <div class="col-md-6">
-                <!-- Heading Text  -->
-                <div class="section-heading">
-                    <h2>About Us</h2>
-                    <div class="line-shape"></div>
-                </div>
-                </div>
-                    <div class="col-md-6"></div>
-
-
-
-</span> </h2>
-            <p><font color="#333333"><a href="adt-promotions-home-security-system-wireless-hardwired-home-alarm-system.html">ADT Promotions</a> <a href="/"> Monitored Home
-                        Security</a> <a href="adt-best-deal-home-security-system-wireless-hardwired-home-alarm-system.html">Best Deal</a> Alarm Systems : Canada's #1 Choice for <a href="adt-promotion-home-security-system-wireless-hardwired-home-alarm-system.html">ADT Promotion Home Security</a> | Call Now:
-                    1-888-808-9642 <br>
-                    Certain content is the property of <a href="home-security-system.html">ADT</a> and used under license. The
-                </font>
-                <a target="_blank" href="http://www.adt.ca" style="text-decoration: none; font-family: tahoma; font-size: 11px; color: #2D546D">
-                    <font color="#333333" style="font-size: 8pt; font-family: Verdana,Helvetica">
-                        ADT</font></a><font color="#333333"> and <a href="adt-dealers-home-security-system-wireless-hardwired-home-alarm-system.html">ADT
-                        Authorized Dealer</a> logos are registered trademarks of <a href="adt-promotional-home-security-system-wireless-hardwired-home-alarm-system.html">ADT Promotional Services</a> AG and are
-                    used under license. </font>
-                <a target="_blank" href="http://www.security.honeywell.com/" style="text-decoration: none; font-family: tahoma; font-size: 11px; color: #2D546D">
-                    <font color="#333333" style="font-size: 8pt; font-family: Verdana,Helvetica">
-                        Videos are used with permission.</font></a>
-
-
-
-
-
-                <p><font color="#333333">
-  <span style="font-family: Verdana,Helvetica; font-size: 8pt">Head Office : One
-  Yonge Street, Suite 1801, Toronto, Ontario, M5E 1W7</span></font><p>
-            
-            </cnter>
-        </div>
-    </div>
-
-    <section class="app-screenshots-area section_padding_0_100 clearfix" id="screenshot">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2>Our Partners</h2>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- App Screenshots Slides  -->
-                    <div class="app_screenshots_slides owl-carousel">
-                        <div class="single-shot">
-                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="http://quanticalabs.com/wp_themes/renovate/files/2015/05/logo_01.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-</section>
 
 @endsection
 <!-- ***** Contact Us Area End ***** -->

@@ -36,14 +36,14 @@
 
         </div>
 
-        <div class=" main-text " style="padding-top:80px;">
+        <div class=" main-text " style="padding-top:40px;">
             <div class="  text-center">
                 <section class="form-elegant">
 
                     <!--Form without header-->
                     <div class="card  wow fadeInUp">
                         <div class="text-center" style="background-color: #0057D2!important">
-                            <h5  style="color:white; padding:10px; margin-top:25px; "><strong>FREE HOME Security
+                            <h5  style="color:white;  margin-top:15px; "><strong>FREE HOME Security
                                     Review</strong></h5>
                         </div>
                         <div class="card-body col-md-12">
@@ -53,18 +53,12 @@
                             <div class="form-group">
 
 
-                                <div class="col-md-12">
-                                    <div class="col-lg">
+                                    <div class="col-lg-12">
 
-                                        <label for="happy">Home Owner?</label>
-                                    </div>
-                                    <div class="col-lg">
+                                        <label for="happy"><small>Home Owner?</small></label>
+                                   
 
-
-                                        <!-- Switch -->
-
-                                        <!-- Normal switch -->
-                                        <span class="switch">
+                                        <span class="switch switch-sm">
 
                                             <label for="switch-normal">Yes</label>
 
@@ -72,19 +66,19 @@
                                             <label for="switch-normal">No</label>
                                         </span>
                                     </div>
-                                </div>
+                              
                                 <!--Body-->
                                 <div class="md-form">
-                                    <input type="text" id="Form-email1" class="form-control" placeholder="Full Name">
+                                    <input type="text" id="Form-email1" class="form-control-sm" placeholder="Full Name">
                                 </div>
                                 <div class="md-form">
-                                    <input type="text" id="Form-pass1" class="form-control" placeholder="Phone">
+                                    <input type="text" id="Form-pass1" class="form-control-sm" placeholder="Phone">
                                 </div>
                                 <div class="md-form ">
-                                    <input type="text" id="Form-pass1" class="form-control" placeholder="Email">
+                                    <input type="text" id="Form-pass1" class="form-control-sm" placeholder="Email">
                                 </div>
                                 <div class="text-center mb-3">
-                                    <button type="button" class="btn btn-rounded" style="background-color: #0057D2!important">GET A FREE QUOTE
+                                    <button type="button" class="btn btn-rounded btn-sm" style="background-color: #0057D2!important">GET A FREE QUOTE
                                     </button>
                                 </div>
                             </div>

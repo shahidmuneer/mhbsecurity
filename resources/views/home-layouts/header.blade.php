@@ -36,7 +36,7 @@
                 <div class="menu_area ">
                     <nav class="navbar navbar-expand-lg navbar-default navbar-light">
                         <!-- Logo -->
-                        <a class="navbar-brand color-dust" href="#home" style="padding:5px; margin-left:-65px;"><img
+                        <a class="navbar-brand color-dust" href="#home" ><img
                                     src="/img/adt-images/adt-logo.png" width="60" class="img-responsive"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
                                 aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span

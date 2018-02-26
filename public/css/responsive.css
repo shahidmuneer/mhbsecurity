@@ -2,9 +2,9 @@
     .menu_area .navbar-brand {
         font-size: 42px;
     }
-    .menu_area #nav .nav-link {
+/*    .menu_area #nav .nav-link {
         padding: 35px 7.5px;
-    }
+    }*/
     .sing-up-button > a {
         color: #fff;
         height: 40px;
@@ -23,9 +23,9 @@
     .app_screenshots_slides {
         padding: 0 4%;
     }
-    .header_area.sticky .menu_area #nav .nav-link {
+/*    .header_area.sticky .menu_area #nav .nav-link {
         padding: 23px 7.5px;
-    }
+    }*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -38,8 +38,7 @@
     .header_area.sticky {
         height: 50px;
     }
-    .header_area .menu_area #nav .nav-link,
-    .header_area.sticky .menu_area #nav .nav-link {
+    .header_area .menu_area #nav .nav-link {
         padding: 7.5px 15px;
     }
     #ca-navbar {
@@ -266,21 +265,25 @@
 }
 @media (max-width: 1000px){
     
-    .navbar-brand img
+   .menu_area .navbar-brand
     {
      margin-left:0px;   
     }
+    
+   .menu_area .navbar-brand img
+   {
+       width:40px;
+   }
     .main-text
 {
     position:inherit;
     width:100%;
-    padding:25px;
+    padding:10%;
 
 }
 
 
-
-#carosel-top .carousel .carousel-item {
+/*#carosel-top .carousel .carousel-item {
   height: 300px;
 }
 
@@ -290,9 +293,67 @@
     left: 0;
     height:300px;
     max-height: 300px;
-}
+}*/
 
 .header_form_qoute{
     padding-top:0px;
+}
+.banner-under-home > p{
+    padding-top:4px;
+    padding-bottom: 4px;
+    color:white;
+    font-size:10px;
+}
+
+.nav-tabs .nav-link{
+    font-size:10px;
+    padding-left:4px;
+    padding-right:4px;
+}
+#carosel-center .carousel .carousel-item {
+  height: auto;
+}
+
+#carosel-center .carousel-item  img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height:auto;
+    max-height:auto;
+}
+
+
+.box .box-head{
+     font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    background-image: url(/img/core-img/service_head.jpg);
+    text-align: center;
+    color: white;
+    padding: 14px;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+/*.box .box-footer{
+    box-shadow:inset 3px 83px 10px 15px whitesmoke, -9px 1px 25px 1px lightgrey;
+padding-left:15px;
+font-size:12px;
+}*/
+.box .box-content h5{
+    font-size:12px;
+}
+
+}
+
+@media (max-width: 500px){
+    .blink-text{
+        font-size:10px;
+    }
+    .box .box-head{
+   
+    background-position: center;
+    background-size: contain;
 }
 }

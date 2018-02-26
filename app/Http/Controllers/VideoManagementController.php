@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Products;
+use App\Videos;
 
-class ProductManagementController extends Controller
+class VideoManagementController extends Controller
 {
        /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = '/product-management';
+    protected $redirectTo = '/video-management';
 
          /**
      * Create a new controller instance.
@@ -32,11 +32,10 @@ class ProductManagementController extends Controller
      */
     public function index()
     {
-        $products = Products::paginate(5);
+        $videos = Videos::paginate(5);
 
-        return view('product-mgt/index', ['products' => $products]);
+        return view('video-mgt/index', ['videos' => $videos]);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -44,7 +43,7 @@ class ProductManagementController extends Controller
      */
     public function create()
     {
-        return view('product-mgt.create');
+        return view('video-mgt.create');
     }
 
     /**
@@ -63,14 +62,14 @@ $insert_array=$request->all();
     
 if(!empty($image)){
     $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-    $image->move(base_path() . '/uploads/products/', $input['imagename']);
+    $image->move(base_path() . '/uploads/videos/', $input['imagename']);
     $insert_array=array_merge($insert_array,['picture'=>$input['imagename']]);
      
 }
     
-    Products::create($insert_array);
+    Videos::create($insert_array);
 
-        return redirect()->intended('/product-management');
+        return redirect()->intended('/video-management');
     }
 
     /**
@@ -92,15 +91,15 @@ if(!empty($image)){
      */
     public function edit($id)
     {
-        $product = Products::find($id);
+        $video = Videos::find($id);
         
         // Redirect to user list if updating user wasn't existed
-        if ($product == null || $product->count() == 0) {
+        if ($video == null || $video->count() == 0) {
             return redirect()->intended('/user-management');
         }
         
    
-        return view('product-mgt/edit', ['product' => $product]);
+        return view('video-mgt/edit', ['video' => $video]);
     }
 
     /**
@@ -113,19 +112,19 @@ if(!empty($image)){
     public function update(Request $request, $id)
     {
        
-        $user = \App\Products::findOrFail($id);
+        $user = \App\Videos::findOrFail($id);
         
         $this->validateInput($request);
         $input=$request->all();
          $image = $request->file('picture');
 if(!empty($image)){
     $img=$input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-     $image->move(base_path() . '/uploads/products/', $input['imagename']);
+     $image->move(base_path() . '/uploads/videos/', $input['imagename']);
 $inpug=array_merge($input,['picture'=>$img]);
 }
-        $product=\App\Products::find($id);
-        $product->fill($input)->save();
-        return redirect()->intended('/product-management');
+        $video=\App\Videos::find($id);
+        $video->fill($input)->save();
+        return redirect()->intended('/video-management');
     }
 
     /**
@@ -136,9 +135,9 @@ $inpug=array_merge($input,['picture'=>$img]);
      */
     public function destroy($id)
     {
-        Products::where('id', $id)->delete();
+        Videos::where('id', $id)->delete();
         
-         return redirect()->intended('/product-management');
+         return redirect()->intended('/video-management');
     }
 
     /**
@@ -155,12 +154,12 @@ $inpug=array_merge($input,['picture'=>$img]);
             'department' => $request['department']
             ];
 
-       $products = $this->doSearchingQuery($constraints);
-       return view('users-mgmt/index', ['users' => $products, 'searchingVals' => $constraints]);
+       $videos = $this->doSearchingQuery($constraints);
+       return view('users-mgmt/index', ['users' => $videos, 'searchingVals' => $constraints]);
     }
 
     private function doSearchingQuery($constraints) {
-        $query = Products::query();
+        $query = Videos::query();
         $fields = array_keys($constraints);
         $index = 0;
         foreach ($constraints as $constraint) {

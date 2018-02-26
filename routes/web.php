@@ -18,6 +18,8 @@ Route::get('/', function () {
 //  
     return view('welcome')->with(["products"=>$products,"packages"=>$packages]);
 });
+
+Route::get("/adt-canada-home-alarm-security-packages","PublicController@adtPackages");
 Auth::routes();
 Route::get('/profile', 'ProfileController@index')->name('home');
 
@@ -44,5 +46,6 @@ Route::resource('package-management','PackageManagementController');
 
 
 Route::get('/product/get', 'AjaxController@get');
+Route::get('/video/get', 'AjaxController@getVideo');
 
 Route::get('/home', 'HomeController@index')->name('home');

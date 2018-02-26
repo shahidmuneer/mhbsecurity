@@ -20,4 +20,10 @@ class AjaxController extends Controller
         
         return \response()->json(array("product"=>$product),200);
     }
+       public function getVideo(Request $request){
+        
+        $videos=\App\Videos::find($request->id);
+        
+        return \response()->json(array("videos"=>$videos),200);
+    }
 }

@@ -117,9 +117,10 @@ if(!empty($image)){
         $input=$request->all();
          $image = $request->file('picture');
 if(!empty($image)){
-    $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+     $img=$input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+
      $image->move(base_path() . '/uploads/packages/', $input['imagename']);
-$request=array_merge($input,['picture'=>$input['imagename']]);
+$input=array_merge($input,['picture'=>$img]);
 }
         $package=\App\Packages::find($id);
         $package->fill($input)->save();
@@ -172,7 +173,7 @@ $request=array_merge($input,['picture'=>$input['imagename']]);
     }
     private function validateInput($request) {
         $this->validate($request, [
-        'name' => 'required|max:30',
+        'name' => 'required',
         'picture' => 'image',
         'picture_description' => 'required|max:155',
         'details' => 'required',
